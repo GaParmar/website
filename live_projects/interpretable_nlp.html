@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="js/lib/p5.js"></script>
+        <script src="js/lib/p5.sound.js"></script>
+        <script src="js/lib/delaunay.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="js/interpretable_nlp.js"></script>
+        <script src="js/particle_background.js"></script>
+        <title>NLP model comparision</title>
+    </head>
+    <body style="background-color: rgb(0,0,0);">
+        <!-- The div for top sentence entry bar -->
+        <div class="input-group mt-3 mb-3 mx-auto" style="width: 80%;">
+           <div class="input-group-prepend">
+               <span class="input-group-text" id="basic-addon3">&lt;S&gt;</span>
+           </div>
+           <input type="text" class="form-control" id="sentence" aria-describedby="basic-addon3">
+           <div class="input-group-prepend">
+               <button class="btn btn-outline-secondary"
+                       type="button" 
+                       id="button-addon1"
+                       onclick="generateOnClick()">
+                   Generate</button>
+           </div>
+       </div>
+
+       <!-- word weight canvas for both the models -->
+       <canvas id="word_weight" 
+            style=" position: absolute;
+                    z-index: 2;
+                    top: 100px;
+                    left: 5%;
+                    height: 300px;
+                    width: 40%;"
+            class="chartjs-render-monitor"></canvas>
+
+        <!-- bigram weights for the first model-->
+        <canvas id="bigram_weight" 
+            style=" position: absolute;
+                    z-index: 2;
+                    top: 100px;
+                    right: 5%;
+                    height: 300px;
+                    width: 40%;"
+            class="chartjs-render-monitor"></canvas>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            
+    </body>
+</html>
