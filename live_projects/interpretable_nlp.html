@@ -13,7 +13,7 @@
     </head>
     <body style="background-color: rgb(0,0,0);">
         <!-- The div for top sentence entry bar -->
-        <div class="input-group mt-3 mb-3 mx-auto" style="width: 80%;">
+        <div class="input-group mt-3 mb-3 mx-auto" style="width: 80%;height: 10%;margin: 0px;">
            <div class="input-group-prepend">
                <span class="input-group-text" id="basic-addon3">&lt;S&gt;</span>
            </div>
@@ -45,7 +45,40 @@
                     right: 5%;
                     height: 300px;
                     width: 40%;"
-            class="chartjs-render-monitor"></canvas>
+            class="chartjs-render-monitor">
+        </canvas>
+
+        <div id = "prediction_1"
+         class="card" 
+         style="position: absolute;
+                z-index: 2;
+                top: 420px;
+                left: 7.5%">
+        <div class="card-header">
+            Model 1: Bigram Model
+        </div>
+        <ul class="list-group list-group-flush">
+            <li id = "p1" class="list-group-item">Positivity: </li>
+            <li id = "l1" class="list-group-item">Label: </li>
+            <li id = "c1" class="list-group-item">Confidence: </li>
+        </ul>
+    </div>
+
+    <div id = "prediction_2"
+         class="card" 
+         style="position: absolute;
+                z-index: 2;
+                top: 420px;
+                left: 57.5%">
+        <div class="card-header">
+            Model 2: Word2Vec
+        </div>
+        <ul class="list-group list-group-flush">
+            <li id = "p2" class="list-group-item">Positivity: </li>
+            <li id = "l2" class="list-group-item">Label: </li>
+            <li id = "c2" class="list-group-item">Confidence: </li>
+        </ul>
+    </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

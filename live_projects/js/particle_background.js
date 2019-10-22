@@ -35,7 +35,7 @@ function Particle(x, y, level){
 opacity=30
 
 function setup(){
-    createCanvas(windowWidth, windowHeight*1.5);
+    createCanvas(windowWidth, windowHeight*0.9);
     colorMode(HSB, 360);
     textAlign(CENTER);
     background('rgba(255,255,255, 0.25)');
@@ -98,7 +98,7 @@ var intervalID = window.setInterval((
     ()=>{
         allParticles.push(new Particle(random(windowWidth), random(windowHeight), maxLevel))
     }
-), 100);
+), 500);
 
 
 // function mouseMoved(){
