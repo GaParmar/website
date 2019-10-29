@@ -94,11 +94,11 @@ function draw(){
 
 
 // Will execute myCallback every 0.5 seconds 
-var intervalID = window.setInterval((
-    ()=>{
-        allParticles.push(new Particle(random(windowWidth), random(windowHeight), maxLevel))
-    }
-), 500);
+// var intervalID = window.setInterval((
+//     ()=>{
+//         allParticles.push(new Particle(random(windowWidth), random(windowHeight), maxLevel))
+//     }
+// ), 500);
 
 
 // function mouseMoved(){

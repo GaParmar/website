@@ -12,6 +12,7 @@ function generateOnClick(){
     var data = {
         "sentence": document.getElementById('sentence').value
     }
+    send_post_json(data, ()=>{console.log("returned")})
 }
 
 var sent = ["this", "apple", "is", "delicious"]
