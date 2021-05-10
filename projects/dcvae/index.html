@@ -1,1 +1,122 @@
-hello.txt
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+  <title>DC-VAE Project Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta property="og:image" content="resources/teaser.jpg"/>
+<meta property="og:title" content="Dual Contradistinctive Generative Autoencoder" />
+
+<script src="lib.js" type="text/javascript"></script>
+<script src="popup.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+// redefining default features
+var _POPUP_FEATURES = 'width=500,height=300,resizable=1,scrollbars=1,titlebar=1,status=1';
+</script>
+<link media="all" href="glab.css" type="text/css" rel="StyleSheet">
+<style type="text/css" media="all">
+IMG {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FLOAT: right;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px
+}
+#primarycontent {
+	MARGIN-LEFT: auto; ; WIDTH: expression(document.body.clientWidth >
+800? "800px": "auto" ); MARGIN-RIGHT: auto; TEXT-ALIGN: left; max-width:
+800px }
+BODY {
+	TEXT-ALIGN: center
+}
+</style>
+
+<meta content="MSHTML 6.00.2800.1400" name="GENERATOR"><script src="b5m.js" id="b5mmain" type="text/javascript"></script></head>
+
+<body>
+
+<div id="primarycontent">
+<center><h1>Dual Contradistinctive Generative Autoencoder</h1></center>
+<center><h2>
+  <a href="https://gauravparmar.com/">Gaurav Parmar</a>&nbsp;&nbsp;&nbsp;
+  <a href="https://scholar.google.com/citations?user=OSTCgu4AAAAJ&hl=en">Dacheng Li</a>&nbsp;&nbsp;&nbsp;
+  <a href="https://scholar.google.com/citations?user=N7xPDeEAAAAJ&hl=en">Kwonjoon Lee</a>&nbsp;&nbsp;&nbsp;
+  <a href="https://pages.ucsd.edu/~ztu/">Zhuowen Tu</a>&nbsp;&nbsp;&nbsp;
+</h2>
+</center>
+<center><h2>
+  Carnegie Mellon University &nbsp;&nbsp;&nbsp;
+  UC San Diego
+</h2></center>
+<center>
+  <h2>
+      <strong>
+          <a href="https://arxiv.org/pdf/2011.10063.pdf">[Paper]</a> | 
+          <a href="https://github.com/mlpc-ucsd/DC-VAE">[GitHub]</a> 
+      </strong>
+  </h2></center>
+<center style="margin-top:1cm;">
+  <a href="resources/teaser.png">
+  <img src="resources/teaser.png" width="800">
+  </a>
+</center>
+<p></p>
+
+<br><br>
+<p style="margin-top:10cm;">
+<h2>Abstract</h2>
+
+<div style="font-size:14px"><p align="justify">
+    We present a new generative autoencoder model with dualcontradistinctive losses to improve generative autoencoderthat performs simultaneous inference (reconstruction) andsynthesis (sampling). 
+    Our model, named dual contradis-tinctive generative autoencoder (DC-VAE), integrates aninstance-level discriminative loss (maintaining the instance-level fidelity for the reconstruction/synthesis) with a set-level adversarial loss 
+    (encouraging the set-level fidelity for the reconstruction/synthesis), both being contradistinctive. 
+    Extensive experimental results by DC-VAE across different res-olutions including 32 x 32, 64 x 64, 128 x 128, and 512 x 512 are reported. 
+    The two contradistinctive losses in VAE workharmoniously in DC-VAE leading to a significant qualitativeand quantitative performance enhancement over the base-line VAEs without architectural changes. 
+    State-of-the-artor competitive results among generative autoencoders forimage reconstruction, image synthesis, image interpolation,and representation learning are observed.   
+    DC-VAE is ageneral-purpose VAE model, applicable to a wide variety ofdownstream tasks in computer vision and machine learning.
+</p></div>
+
+<a href="https://arxiv.org/pdf/2011.10063.pdf">
+  <img style="float: left; padding: 10px; PADDING-RIGHT: 30px;" alt="paper thumbnail" src="resources/thumbnail.png" width=170>
+</a>
+<br>
+
+
+
+<h2>Paper</h2>
+<p><a href="https://arxiv.org/pdf/2011.10063.pdf">arXiv 2011.10063</a>,  2021. </p>
+
+
+
+<h2>Citation</h2>
+<p>Gaurav Parmar, Dacheng Li, Kwonjoon Lee and Zhuowen Tu. "Dual Contradistinctive Generative Autoencoder", in CVPR, 2021.
+<br>
+<a href="dcvae_bibtek.txt">Bibtex</a>
+
+</p>
+<br><br>
+
+<h2 align='center'>DC-VAE Reconstruction and Sampling Results on LSUN Bedrooms and CelebA-HQ</h2>
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <tr>
+        <td align="center" valign="middle"><a href="resources/dcvae_results.png"><img src="resources/dcvae_results.png"  width=800> </a></td>
+    </tr>
+  </tr>
+
+</table>
+<p>&nbsp;</p>
+
+
+
+<br>
+<h2>Acknowledgment</h2>
+<p align="justify">
+    This work is funded by NSF IIS- 1717431 and NSF IIS-1618477. We thank Qualcomm Inc. for an award support. The work was performed when G. Parmar and D. Li were with UC San Diego.
+</p>
+
+
+</div>
+</body></html>
